@@ -28,7 +28,20 @@
 main {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
+	width: 50vw;
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0;
+	margin: 0;
 }
 
 .form {
@@ -41,9 +54,8 @@ main {
 /* Form Styling */
 .form-input {
 	padding: 15px;
-	border: 1px solid #e1e1e1;
-	border-radius: 9999px;
-	width: 50vw;
+	border: 1px solid #213547;
+	width: 20vw;
 }
 
 .form-input:focus {
@@ -55,14 +67,16 @@ main {
 .forecast-area {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 	align-items: center;
 	justify-content: center;
+	padding-top: 3rem;
+	width: 100%;
 }
 
 .forecast-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	width: 100%;
 	gap: 4px;
 	padding-top: 1rem;
 }
@@ -77,12 +91,64 @@ main {
 	text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
+/* Current Conditions */
+.current-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 3rem;
+	width: 100%;
+}
+
+.current-conditions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ffffff;
+	width: 100%;
+}
+
+.current-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.current-right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.alert-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3rem;
+	width: 100%;
+}
+
+.alert-card {
+	padding: 20px;
+	border: 1px solid #242424;
+	margin-top: 0.5rem;
+	width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
 	:root {
 		color: #213547;
 		background-color: #ffffff;
 	}
 	.forecast-card {
+		border: 1px solid #213547;
+	}
+	.current-conditions {
 		border: 1px solid #213547;
 	}
 }
