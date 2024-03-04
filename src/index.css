@@ -135,7 +135,7 @@ li {
 
 .alert-card {
 	padding: 20px;
-	border: 1px solid #242424;
+	border: 1px solid #ffffff;
 	margin-top: 0.5rem;
 	width: 100%;
 }
@@ -150,5 +150,8 @@ li {
 	}
 	.current-conditions {
 		border: 1px solid #213547;
+	}
+	.alert-card {
+		border: 1px solid #242424;
 	}
 }
