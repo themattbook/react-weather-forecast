@@ -78,7 +78,7 @@ function App() {
 			);
 			setCurrent(response.data.current);
 			setAlert(response.data.alerts.alert);
-			console.log(response.data);
+			console.log(`Weather retreived for ${response.data.location.name}`);
 		} catch (error) {
 			console.error("Error fetching weather data:", error);
 		}

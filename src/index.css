@@ -53,8 +53,9 @@ li {
 
 /* Form Styling */
 .form-input {
+	background: #242424;
 	padding: 15px;
-	border: 1px solid #213547;
+	border: 1px solid #ffffff;
 	width: 20vw;
 }
 
@@ -153,5 +154,10 @@ li {
 	}
 	.alert-card {
 		border: 1px solid #242424;
+	}
+	.form-input {
+		background-color: #ffffff;
+		color: #242424;
+		border: 1px solid #213547;
 	}
 }
